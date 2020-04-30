@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">LoanManager</string>
+
+    <!-- used in multiple places -->
+    <string name="total_amount_zero">0</string>
+    <string name="not_specified_string">Not Specified</string>
+    <string name="loan_type_incoming">Incoming</string>
+    <string name="loan_type_outgoing">Outgoing</string>
+    <string name="loan_type_archived_in">Archived (incoming)</string>
+    <string name="loan_type_archived_out">Archived (outgoing)</string>
+
+    <string name="sort_preference_key">com.tomanoindustries.loanmanager.SORT_PREFERENCE</string>
+    <string name="sort_mode_key">sort_mode</string>
+    
+    <string name="filter_by_mnu_item_label">Sort</string>
+    <string name="filter_old_first">Old First</string>
+    <string name="filter_new_first">New First</string>
+    <string name="filter_big_first">Big First</string>
+    <string name="filter_small_first">Small First</string>
+
+    <!-- main activity -->
+    <string name="nav_loans_in">In</string>
+    <string name="nav_loans_out">Out</string>
+    <string name="nav_loans_history">History</string>
+
+    <!--  list item -->
+    <string name="list_item_currency_label">RUB</string>
+    <string name="list_item_start_date_label">Start Date:</string>
+    <string name="list_item_end_date_label">End Date:</string>
+    <string name="list_item_rate_label">Rate:</string>
+    <string name="list_item_empty_placeholder">-</string>
+    <string name="list_item_rate_divider">/</string>
+
+    <!-- new loan activity -->
+    <string name="new_loan_toolbar_title">Add New Loan</string>
+    <string name="new_loan_name_hint">Name</string>
+    <string name="new_loan_phone_number_hint">Phone</string>
+    <string name="new_loan_amount_hint">Amount</string>
+    <string name="new_loan_date_btn_label">Choose End Date</string>
+    <string name="new_loan_without_end_date_checkbox">No End Date</string>
+    <string name="new_loan_enable_interest_label">Add Interest Rate</string>
+    <string name="new_loan_note_hint">Note</string>
+
+    <string name="new_loan_percentage">Interest rate</string>
+    <string name="new_loan_percentage_suffix">%</string>
+    <string name="new_loan_period_label">Period: </string>
+
+    <string name="one_day">1 Day</string>
+    <string name="three_days">3 Days</string>
+    <string name="one_week">1 Week</string>
+    <string name="two_weeks">2 weeks</string>
+    <string name="one_month">1 Month</string>
+    <string name="one_year">1 Year</string>
+
+    <string-array name="periods">
+        <item>@string/one_day</item>
+        <item>@string/three_days</item>
+        <item>@string/one_week</item>
+        <item>@string/two_weeks</item>
+        <item>@string/one_month</item>
+        <item>@string/one_year</item>
+    </string-array>
+
+    <string name="new_loan_menu_save">Save</string>
+    <string name="new_loan_menu_cancel">Cancel</string>
+
+    <string name="name_cannot_be_empty_error_msg">name cannot be empty</string>
+    <string name="amount_cannot_be_zero_error_msg">amount cannot be 0</string>
+    <string name="amount_should_be_specified_error_msg">amount should be specified</string>
+
+    <string name="date_error_dialog_title">Incorrect date</string>
+    <string name="date_error_dialog_msg">End date should be greater than today</string>
+
+    <string name="interest_rate_zero_title">Incorrect interest rate</string>
+    <string name="interest_rate_zero_msg">Interest rate cannot be zero</string>
+
+    <string name="confirm_cancel_dialog_msg">Quit editing loan information?</string>
+    <string name="confirm_cancel_dialog_positive">Quit</string>
+    <string name="confirm_cancel_dialog_negative">Cancel</string>
+
+    <string name="optional_helper_text">Optional</string>
+
+    <!-- loan info activity -->
+    <string name="info_activity_delete_mnu">Delete</string>
+    <string name="info_activity_share_mnu">Share</string>
+    <string name="info_activity_error_message">Cannot display loan info</string>
+
+    <string name="info_activity_toolbar_title">Loan Information</string>
+    <string name="info_activity_loan_type_label">Loan type</string>
+    <string name="info_activity_loan_name_label">Name</string>
+    <string name="info_activity_loan_phone_label">Phone</string>
+    <string name="info_activity_loan_date_start_label">Start Date</string>
+    <string name="info_activity_loan_date_end_label">End Date</string>
+    <string name="info_activity_loan_next_date_label">Next Accrual Date</string>
+    <string name="info_activity_loan_start_amount_label">Start Amount</string>
+    <string name="info_activity_loan_end_amount_label">Current Amount</string>
+    <string name="info_activity_loan_interest_rate_label">Interest Rate</string>
+    <string name="info_activity_loan_interest_period_label">Interest Period (days)</string>
+    <string name="info_activity_loan_id_label">Loan ID</string>
+    <string name="info_activity_loan_note_label">Note</string>
+
+    <!-- string for share text composition -->
+    <string name="share_using">Share Using</string>
+    <string name="incoming_loan_msg">%1$s owes me %2$s RUB since %3$s. And it should be returned by %4$s.</string>
+    <string name="incoming_loan_msg_no_date">%1$s owes me %2$s RUB since %3$s.</string>
+    <string name="outgoing_loan_msg">I owe %1$s %2$s RUB since %3$s. And I should return it by %4$s.</string>
+    <string name="outgoing_loan_msg_no_date">I owe %1$s %2$s RUB since %3$s.</string>
+
+
+    <!-- in fragment -->
+    <string name="in_toolbar_title">Incoming</string>
+
+    <!-- archive dialog -->
+    <string name="in_dialog_delete_title">Confirm action</string>
+    <string name="in_dialog_delete_msg">Put this loan to archived?</string>
+    <string name="in_dialog_delete_positive">Archive</string>
+    <string name="in_dialog_delete_negative">Cancel</string>
+
+    <!-- delete forever dialog-->
+    <string name="arch_dialog_delete_msg">Delete this loan forever?</string>
+    <string name="arch_dialog_delete_positive">Delete</string>
+    <string name="arch_dialog_delete_negative">Cancel</string>
+
+    <!-- out fragment -->
+    <string name="out_toolbar_title">Outgoing</string>
+
+    <!-- archived fragment -->
+    <string name="arch_toolbar_title">Archived</string>
+    <string name="arch_thousands">K</string>
+    <string name="arch_millions">M</string>
+
+    <!-- notifications -->
+    <string name="in_loan_notification_title">Time to get the money!</string>
+    <string name="in_loan_notification_body">The loan you gave to %1$s should be returned tomorrow.
+    They owe you %2$s RUB</string>
+
+    <string name="out_loan_notification_title">Time to pay!</string>
+    <string name="out_loan_notification_body">The loan %1$s gave you should be returned tomorrow.
+    You owe them %2$s RUB</string>
+
+</resources>
+
+
+
+
+
+
+
+
